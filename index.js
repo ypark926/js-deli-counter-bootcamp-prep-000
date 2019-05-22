@@ -1,7 +1,10 @@
-function takeANumber(line, name) {
+var counter = 0;
+
+function takeANumber(line) {
   var welcome = "";
-  line.push(name);
-  welcome = "Welcome, " + name + ". You are number " + line.length + " in line.";
+  line.push(counter+1);
+  welcome = "Welcome. You are number " + (counter+1);
+  counter++;
   return welcome;
 }
 
